@@ -25,7 +25,7 @@ $$SEp = \sqrt{\frac{\pi(1-\pi)}{n}} = \sqrt{\frac{0.45(1-0.45)}{1010}} = \sqrt{\
 
 ## Question 5
 Recall from calculus the techniques of finding maximum values of functions.  
-a. Show that the maximum of the function $ f(x)=x(1−x)$ occurs when $x=\frac{1}{2}$​.  
+a. Show that the maximum of the function $f(x)=x(1−x)$ occurs when $x=\frac{1}{2}$​.  
 b. Use this to prove the inequality in Formula 1.1:
 $$ \sqrt{\frac{\pi(1-\pi)}{n}} \leq \frac{1}{2{\sqrt{n}}}$$
 ### (a)
