@@ -6,6 +6,7 @@ Calculation:
 Weight of the 4 mice = 2 * 30g = 120g
 ```
 Standard error for 1 mice is 5g  
+  
 $$\sqrt{\frac{(5^2) + (5^2) + (5^2) + (5^2)}{4}} = \sqrt{\frac{100}{4}} = 5g$$
 
 ## Question 2
