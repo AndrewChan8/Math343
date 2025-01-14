@@ -1,0 +1,23 @@
+/* General styles for dark mode */
+body {
+  background-color: #282C34; /* Dark background */
+  color: #ffffff; /* Light text */
+  font-family: Arial, sans-serif; /* Optional font */
+  line-height: 1.6; /* Optional for readability */
+}
+
+a {
+  color: #1e90ff; /* Link color */
+}
+
+code, pre {
+  background-color: #2d2d2d; /* Dark background for code blocks */
+  color: #ffffff; /* Light text for code */
+  padding: 0.5em;
+  border-radius: 4px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff; /* Optional: Highlight headings */
+}
+
