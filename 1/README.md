@@ -38,7 +38,7 @@ $$ f(x)' = 1 - 2x $$
 #### Find critical points by setting f(x)' = 0
 $$ 1 - 2x = 0 => x = \frac{1}{2} $$
 #### Check maximum by looking at second derivative
-$$f(x)'' = -2 $$  
+$$ f(x)'' = -2 $$  
 Since $-2 < 0$, the function is concave down which means that $ x = \frac{1}{2}$ is the maximum.
 #### Plug the x back in to find the maximum
 $$ f(\frac{1}{2}) = \frac{1}{2}(1 - \frac{1}{2}) = \frac{1}{2} * \frac{1}{2} = \frac{1}{4}$$
