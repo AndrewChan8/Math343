@@ -48,7 +48,7 @@ Therefore the maximum is at x = 1/2 and the maximum value is 1/4
 ### (b)
 #### Use the result from part a
 We know that the maximum value of π(1 - π) is 1/4, and occurs when π = 1/2
-That means that 
+That means that  
 $$ \pi(1-\pi) \leq \frac{1}{4} $$
 #### Substitute the inequality
 Since $$ \pi(1-\pi) \leq \frac{1}{4} $$
