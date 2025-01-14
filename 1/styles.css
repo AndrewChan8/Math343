@@ -11,7 +11,7 @@ a {
 }
 
 code, pre {
-  background-color: #2d2d2d; /* Dark background for code blocks */
+  background-color: #000000; /* Dark background for code blocks */
   color: #ffffff; /* Light text for code */
   padding: 0.5em;
   border-radius: 4px;
@@ -21,3 +21,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff; /* Optional: Highlight headings */
 }
 
+img {
+  width: 500px
+}
