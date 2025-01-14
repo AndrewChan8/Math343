@@ -14,5 +14,6 @@ sqrt(((5^2) + (5^2) + (5^2) + (5^2))/4) = sqrt(100/4) = 5g
 In another Harris Poll of 1144 adult Americans, 306 people felt that the U.S. Constitution should be amended to have presidential elections decided by popular vote rather than by the electoral college. Find the statistic <ins>p</ins> and estimate the standard error SEp.  
 Statistic <ins>p</ins>≈27%
 ```
-> SE<sub>p</sub>
+SE<sub>p</sub>
 ```
+$$\sqrt{\frac{(5^2) + (5^2) + (5^2) + (5^2)}{4}} = \sqrt{\frac{100}{4}} = 5g$$
