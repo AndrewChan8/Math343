@@ -87,7 +87,7 @@ $ 69.148 \pm 2.587 => [66.561, 71.735]$
 95% of the data falls within 2 stand deviations. 
 $ 69.148 \pm 2(2.587) => [63.974, 74.322]$ 
 And 99.7% of the data falls within 3 standard deviations. 
-$ 69.148 \pm 3(2.587) => [61.387, 76.909]$ 
+$ 69.148 \pm 3(2.587) => [61.387, 76.909]$
 
 c. If one of the men were to be randomly selected and you had to estimate his height, your best guess would be **69.148** inches; your estimate would differ from his actual height by approximately **2.587** inches or so.
 
@@ -99,3 +99,26 @@ $$
 Where $s$ is the sample standard deviation and $n$ is the sample size
 e. The population mean μ is approximately **69.148** give or take **0.4504** or so.
 
+## Question 3
+If a fair die is rolled three times, find the probabilities of the following events:
+
+a. All of the rolls show an even number of dots.
+There are 3 even numbers so the chance of rolling an even number once is 3/6 = 1/2. Since we are looking at all three rolls and they are independent of each other, we can multiply the chances all together. 
+$ P(\text{all rolls even}) = (\frac{1}{2})^3 = \frac{1}{8}$
+
+b. The last two rolls show an even number of dots.
+Using the previous logic the probability for the last 2 rolls are just multiplied together to get
+$ \frac{1}{2} \times \frac{1}{2} = \frac{1}{4} $
+And since the first roll doesn't matter, it stays as 1/4.
+
+c. The third roll shows an even number of dots.
+Only the last roll matters
+$ P(\text{last roll even}) = \frac{1}{2} $
+
+d. Every roll shows a single dot.
+The probability of rolling a single dot, aka a 1, is 1/6. And since they are all independent we can mutiply all 3 rolls together.
+$ P(\text{all single dot}) = (\frac{1}{6})^3 = \frac{1}{216} $
+
+e. Every roll shows the same number of dots.
+Since they all have to match and are being rolled one at a time, the means that the first die can be anything. Since it can be anything, it won't effect the probability. So, we can just say that the last two rolls will have a 1/6 chance of matching the first roll, whatever it may be. We can notate it like this
+$ P(\text{all rolls match}) = (\frac{1}{6})^2 = \frac{1}{36}$
