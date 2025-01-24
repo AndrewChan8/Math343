@@ -120,3 +120,14 @@ $ P(\text{all single dot}) = (\frac{1}{6})^3 = \frac{1}{216} $
 e. Every roll shows the same number of dots.
 Since they all have to match and are being rolled one at a time, the means that the first die can be anything. Since it can be anything, it won't effect the probability. So, we can just say that the last two rolls will have a 1/6 chance of matching the first roll, whatever it may be. We can notate it like this
 $ P(\text{all rolls match}) = (\frac{1}{6})^2 = \frac{1}{36}$
+
+## Question 4
+Sketch a Venn diagram and label the probabilities of the regions 
+\( E \cup F \), \( E \cap F' \), \( F \cap E' \), and \( (E \cup F)' \), 
+if \( Pr(E) = 0.40 \), \( Pr(F) = 0.55 \), and \( Pr(E \cap F) = 0.15 \).
+![](venn.png)
+
+$ Pr(E \cup F) = 0.80 $
+$ Pr(E \cap F') = 0.25 $
+$ Pr(F \cap E') = 0.40 $
+$ Pr((E \cup F)') = 0.20$
