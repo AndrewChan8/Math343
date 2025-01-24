@@ -1,8 +1,7 @@
 # Assignment 2 - Andrew Chan
 ## Question 1
 
-Write out all 70 possibilities:
-```
+Write out all 70 possibilities:  
 1: OOOOXXXX
 2: OOOXOXXX
 3: OOOXXOXX
@@ -12,7 +11,7 @@ Write out all 70 possibilities:
 7: OOXOXOXX
 8: OOXOXXOX
 9: OOXOXXXO
-10: OOXXOOXX
+10: OOXXOOXX  
 11: OOXXOXOX
 12: OOXXOXXO
 13: OOXXXOOX
@@ -22,7 +21,7 @@ Write out all 70 possibilities:
 17: OXOOXOXX
 18: OXOOXXOX
 19: OXOOXXXO
-20: OXOXOOXX
+20: OXOXOOXX  
 21: OXOXOXOX
 22: OXOXOXXO
 23: OXOXXOOX
@@ -32,7 +31,7 @@ Write out all 70 possibilities:
 27: OXXOOXOX
 28: OXXOOXXO
 29: OXXOXOOX
-30: OXXOXOXO
+30: OXXOXOXO  
 31: OXXOXXOO
 32: OXXXOOOX
 33: OXXXOOXO
@@ -42,7 +41,7 @@ Write out all 70 possibilities:
 37: XOOOXOXX
 38: XOOOXXOX
 39: XOOOXXXO
-40: XOOXOOXX
+40: XOOXOOXX  
 41: XOOXOXOX
 42: XOOXOXXO
 43: XOOXXOOX
@@ -52,7 +51,7 @@ Write out all 70 possibilities:
 47: XOXOOXOX
 48: XOXOOXXO
 49: XOXOXOOX
-50: XOXOXOXO
+50: XOXOXOXO  
 51: XOXOXXOO
 52: XOXXOOOX
 53: XOXXOOXO
@@ -62,7 +61,7 @@ Write out all 70 possibilities:
 57: XXOOOXOX
 58: XXOOOXXO
 59: XXOOXOOX
-60: XXOOXOXO
+60: XXOOXOXO  
 61: XXOOXXOO
 62: XXOXOOOX
 63: XXOXOOXO
@@ -73,7 +72,6 @@ Write out all 70 possibilities:
 68: XXXOOXOO
 69: XXXOXOOO
 70: XXXXOOOO
-```
 
 ## Question 2
 ##### Consider the raw data of men’s heights of Example 2.5 on page 27.
