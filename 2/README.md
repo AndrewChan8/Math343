@@ -123,11 +123,89 @@ $ P(\text{all rolls match}) = (\frac{1}{6})^2 = \frac{1}{36}$
 
 ## Question 4
 Sketch a Venn diagram and label the probabilities of the regions 
-\( E \cup F \), \( E \cap F' \), \( F \cap E' \), and \( (E \cup F)' \), 
-if \( Pr(E) = 0.40 \), \( Pr(F) = 0.55 \), and \( Pr(E \cap F) = 0.15 \).
-![](venn.png)
+$E \cup F$, $E \cap F'$, $F \cap E'$, and $(E \cup F)'$, 
+if $Pr(E) = 0.40$, $Pr(F) = 0.55$, and $Pr(E \cap F) = 0.15$.
 
 $ Pr(E \cup F) = 0.80 $
+![](1.png)
 $ Pr(E \cap F') = 0.25 $
+![](2.png)
 $ Pr(F \cap E') = 0.40 $
+![](3.png)
 $ Pr((E \cup F)') = 0.20$
+![](4.png)
+
+## Question 5
+Suppose that the outcome set of an experiment is the set of positive integers and the events are all possible subsets of the integers. For each positive integer $i$, let $E_i$ be the event that $i$ is the outcome. Prove from the axioms of probability that it is impossible for to have $Pr(E_i) = p$ for all $i$, where $p$ is a fixed constant value.
+
+**Step 1**
+$ S = \{1, 2, 3, ...\} $
+Each outcome $i$ is representated by the event $E_i$ where $E_i$ = $\{i\}$
+Assume $ P(E_i) = p $, a constant probability for all $i$
+
+From the **axioms of probability**, we know:
+1. Axiom 2: $ P(S) = 1 $
+2. Axiom 3: $ P(S) = \sum_{i=1}^{\infty}P(E_i)$, since $E_1, E_2, ...$ are disjoint events. 
+
+**Step 2**
+1. Substituting $P(E_i) = p$ into the formula for $P(S)$, we get:
+$ P(S) = \sum_{i=1}^\infty P(E_i) = \sum_{i=1}^\infty p. $
+2. Since $p$ is constant, the summation simplifies to:
+$ P(S) = p + p + p + ... = \sum_{i=1}^\infty p = p \cdot \infty. $
+3. This result means that $P(S)$ diverges to infinity unless $p=0$.
+
+**Step 3**
+Case 1: $p > 0$
+If $p>0$, the sum $p \cdot \infty$ becomes infinite
+This violates the normalization axiom: $P(S)=1$
+Therefore $p>0$ is not possible
+
+Case 2: $p=0$
+If $p=0$, the sum becomes $ P(S) = \sum_{i=1}^{\infty}0 = 0$
+This violates the normalization axiom: $P(S)=1$
+Therefore $p=0$ is also not possible
+
+**Step 4**
+Since neither $p>0$ nor $p=0$ satisfies the axioms of probability, it is impossible for $P(E_i) = p$ for all $i$, where $p$ is a fixed constant value. 
+
+## Question 6
+An experiment has six possible outcomes. An outcome set for this experiment is $S=\{o1,o2,o3,o4,o5,o6\}$. Suppose the probabilities assigned to the single possible outcome are $Pr(\{o1\})=0.04$, $Pr(\{o2\})=0.20$, $Pr(\{o3\})=0.10$, $Pr(\{o4\})=0.40$, $Pr(\{o5\})=0.20$, and $Pr(\{o6\})=0.06$. Let $A=\{o1,o4,o6\}$, $B=\{o3​,o4​,o5\}$, and $C=\{o2​,o5​\}$ denote three events.
+
+**a**. Which of these events are mutually exclusive?  
+By definition, two events are mutually exclusive if the intersection of both of them results in an empty set.  
+A and C are mutually exclusive since $A \cap B$ is empty. Also, they have no elements in common. 
+
+**b**. Which are independent?
+By definition, two events are independent if $Pr(X \cap Y)=Pr(X)\cdot Pr(Y)$
+
+**Calculate $Pr$**
+$Pr(A) = Pr(\{o_1\}) + Pr(\{o_4\}) + Pr(\{o_6\}) = 0.04 + 0.40 + 0.06 = 0.50$
+$Pr(B) = Pr(\{o_3\}) + Pr(\{o_4\}) + Pr(\{o_5\}) = 0.10 + 0.40 + 0.20 = 0.70.$
+$Pr(C) = Pr(\{o_2\}) + Pr(\{o_5\}) = 0.20 + 0.20 = 0.40.$
+
+
+**Check independence**  
+$Pr(A \cap B) = Pr(\{o_4\}) = 0.40, Pr(A) \cdot Pr(B) = 0.50 \cdot 0.70 = 0.35$
+
+Since $ Pr(A \cap B) \neq Pr(A) \cdot Pr(B) $, $A$ and $B$ are **not independent**.  
+
+$Pr(A \cap C) = 0 \, (\text{mutually exclusive}), Pr(A) \cdot Pr(C) = 0.50 \cdot 0.40 = 0.20$
+
+Since $ Pr(A \cap C) \neq Pr(A) \cdot Pr(C) $, $A$ and $C$ are **not independent**.  
+
+$Pr(B \cap C) = Pr(\{o_5\}) = 0.20, Pr(B) \cdot Pr(C) = 0.70 \cdot 0.40 = 0.28.$
+
+Since $ Pr(B \cap C) \neq Pr(B) \cdot Pr(C) $, $B$ and $C$ are **not independent**.  
+
+Therefore, none of the events are independent.  
+
+**c**. Compute $Pr(B∪C)$.  
+Formula:
+$Pr(B \cup C) = Pr(B) + Pr(C) - Pr(B \cap C)$
+$Pr(B)=0.70$
+$Pr(C)=0.40$
+$Pr(B \cap C) = Pr(\{o5\}) = 0.20$
+
+$Pr(B \cup C) = 0.70 + 0.40 - 0.20 = 0.90$
+
+$Pr(B \cup C) = 0.90$
