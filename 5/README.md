@@ -277,6 +277,44 @@ Final Table Form
 
 ## Question 4
 
+In a test for extrasensory perception (ESP), the subject has to guess which one of three cards lying face down on a table is the ace of spades. Suppose that the subject has no ESP and is just guessing. Find the probability that in 12 guesses, the number of cards guessed correctly is:
+a. 4
+c. 6
+e. at least 6
+
+This is a binomial probability problem because, each guess is independent, the subject has a fixed probability of correctly guessing each card, and there are a fixed number of trials.
+
+A binomial random variable $X$:
+$$
+\text{Bin}(n, \pi)
+$$
+
+where:
+$n = 12$ (the number of guesses),
+$\pi = \frac{1}{3}$ (since the subject is randomly guessing among 3 cards).
+
+The binomial probability formula is:
+$$
+P(X = k) = \binom{n}{k} \pi^k (1 - \pi)^{n - k}
+$$
+
+where $\binom{n}{k} = \frac{n!}{k!(n-k)!}$ is the binomial coefficient (n choose k).
+
+a) Probability of guessing exactly 4 correctly:
+$$
+P(X = 4) = \binom{12}{4} \left(\frac{1}{3}\right)^4 \left(\frac{2}{3}\right)^{8} \approx 0.2384
+$$
+
+c) Probability of guessing exactly 6 correctly:
+$$
+P(X = 6) = \binom{12}{6} \left(\frac{1}{3}\right)^6 \left(\frac{2}{3}\right)^{6} \approx0.1113
+$$
+
+e) Probability of guessing at least 6 correctly:
+$$
+P(X \geq 6) = \sum_{k=6}^{12} \binom{12}{k} \left(\frac{1}{3}\right)^k \left(\frac{2}{3}\right)^{12-k} \approx 0.1777
+$$
+
 ## Question 5
 There are 30 people at a party and each shakes hands with each other exactly once. How many handshakes take place total? See if you can answer this question by rephrasing it as the number of ways to choose $k$ things out of $n$ total (for some specific $n$ and $k$).
 
