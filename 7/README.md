@@ -101,36 +101,29 @@ The test does not require the data to be normally distributed.
 The sign test works well with the ordinal nature of the data (above, below, or equal to the reference value).
 
 ## Question 3
-In a Newsweek poll, 250 adults under the age of 30 and 500 over the age of 30 were asked:
+Are men more likely than women to be ambidextrous? In a study of 1000 men and 1000 women, 19 men and 7 women were classified as ambidextrous. Use the binomial exact test at the 1% level of significance."
 
-"Do you believe Americans today are as willing to work hard at their jobs to get ahead as they were in the past?"
+Null Hypothesis (H0): The probability of being ambidextrous is the same for men and women. $ p_{men} = p_{women} $.
+Alternative Hypothesis (H1): The probability of being ambidextrous is higher for men than for women. $ p_{men} > p_{women} $.
 
-Conduct a binomial exact test at the α = 5% level to test whether fewer adults under 30 feel that Americans are as willing to work hard to get ahead than they were in the past. Use π = 1/3.
+Men: 19 ambidextrous out of 1000, so $ p_{men} = \frac{19}{1000} = 0.019 $.
+Women: 7 ambidextrous out of 1000, so $ p_{women} = \frac{7}{1000} = 0.007 $.
 
-|             | Yes | No | Row total |
-|-------------|----------|---------|---------------|
-| Under 30 |    58    |   192   |       250       |
-| Over 30  |   145    |   355   |       500       |
-| Column total |   203    |   547   |       750       |
+Perform the Binomial Exact Test
 
-Number of "Yes" responses under 30: 58  
-Total respondents under 30: 250  
-Hypothesized proportion ($\pi$): $\frac{1}{3} \approx 0.333$  
-Significance level ($\alpha$): 0.05  
-
+Combined Probability Under Null Hypothesis: 
 $$
-P(X \leq 58) = \sum_{k=0}^{58} \binom{250}{k} (0.333)^k (1-0.333)^{250-k}
+p_{null} = \frac{19 + 7}{1000 + 1000} = 0.013
 $$
 
-$$
-P(X \leq 58) \approx 0.00031
-$$
+p-value Calculation: Using a binomial exact test for the alternative hypothesis $ p_{men} > p_{women} $.
 
-The p-value for the binomial exact test is approximately 0.00031.  
+p-value: 0.069
 
-Since the p-value (0.00031) is much smaller than the significance level (0.05), we reject the null hypothesis.
 
-This result suggests that significantly fewer adults under 30 feel that Americans are as willing to work hard to get ahead as they were in the past, compared to the hypothesized proportion of $\pi = \frac{1}{3}$.
+Since the p-value (0.069) is greater than the significance level (0.01), we fail to reject the null hypothesis.
+
+There is not enough statistical evidence at the 1% significance level to conclude that men are more likely than women to be ambidextrous based on this study.
 
 ## Question 4
 To test a new drug, a group of 10 matched pairs of volunteers is used. In each pair, one volunteer is treated with the drug while the other is treated with a placebo as a control. At the end of the double-blind experiment, a physician examines each pair and declares which of the two is healthier. 
